@@ -28,3 +28,5 @@ The highest accuracy so far achieved has been 88% after exclusion of two of the 
 
 # Methodology
 So far the best performance I have achieved is 88% using a gaussian Kernel and using only 5 features. The method I used for selecting the best features was sequential feature selection and had it rank all the features from best to worst. I then looped all through the features starting from 1 and then adding one more according to the rank on each iteration. In each iteraion I trained a model using the number of features equal to the iteration and then evaluated. This was done for upto 5 kernel functions. After that I chose the best performing Kernel and the respective group of best features to train my final model.
+
+I then used a bayesian optimizer for selecting the best Kernel Scale and box constraint(penalizing factor) for the SVM
